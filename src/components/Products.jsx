@@ -19,7 +19,7 @@ const Products = ({ cat, filters, sort }) => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
-          cat
+          cat && cat !== "all"
             ? `${process.env.REACT_APP_API_URL}/api/products?category=${cat}`
             : `${process.env.REACT_APP_API_URL}/api/products`
         );
