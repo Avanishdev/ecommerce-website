@@ -10,7 +10,7 @@ import axios from "axios";
 
 const Container = styled.div`
   height: 70px;
-  ${mobile({ height: "50px" })}
+  ${mobile({ height: "170px" })}
 `;
 
 const Wrapper = styled.div`
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${mobile({ padding: "10px 0px" })}
+  ${mobile({ padding: "10px 0px", flexDirection: "column" })}
 `;
 
 const Left = styled.div`
